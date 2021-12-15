@@ -6,4 +6,4 @@ summary: Hello this is the summary content!
 tags:
   - post
 ---
-Boby this is the content for body!
+Nyt mä päivitän tämän komponentin bodyä!
