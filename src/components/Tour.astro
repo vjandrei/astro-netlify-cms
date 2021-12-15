@@ -1,7 +1,22 @@
 ---
 import { Markdown } from 'astro/components';
+const data = Astro.fetchContent('./tour.md');
+
+console.log(data)
 ---
 <article>
+
+    {data.slice(0, 3).map((data) => (
+    <span>
+      {data.title}
+      {data.date}
+      {data.author}
+      {data.summary}
+      {data.tags}
+      {data.astro.source}
+    </span>
+    ))}
+
     <div class="banner">
         <p><strong>🧑‍🚀 Seasoned astronaut?</strong> Delete this file. Have fun!</p>
     </div>
